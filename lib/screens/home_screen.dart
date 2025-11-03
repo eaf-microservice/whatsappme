@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:whatsappme/widgets/about.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -62,13 +63,31 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        CircleAvatar(
-                          radius: 40,
-                          backgroundColor: Color(0xFF25D366),
-                          child: Icon(
-                            Icons.phone_iphone,
-                            size: 40,
-                            color: Colors.white,
+                        GestureDetector(
+                          onTap: () {
+                            const AboutMe(
+                              applicationName: 'WhatsAppMe',
+                              version: '1.0.0',
+                              description: 'An app to send WhatsApp messages without saving the contact.',
+                              logo: CircleAvatar(
+                                radius: 40,
+                                backgroundColor: Color(0xFF25D366),
+                                child: Icon(
+                                  Icons.phone_iphone,
+                                  size: 40,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ).showCustomAbout(context);
+                          },
+                          child: const CircleAvatar(
+                            radius: 40,
+                            backgroundColor: Color(0xFF25D366),
+                            child: Icon(
+                              Icons.phone_iphone,
+                              size: 40,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 20),

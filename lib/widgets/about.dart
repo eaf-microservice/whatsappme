@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class AboutMe extends StatelessWidget {
+/// A small utility class that shows a customizable About dialog.
+///
+/// It's used like: `const AboutMe(...).showCustomAbout(context);`
+class AboutMe {
   final String applicationName;
   final String version;
   final String? legalese;
@@ -11,8 +13,7 @@ class AboutMe extends StatelessWidget {
   final Color? backgroundColor;
   final Color? textColor;
 
-  const CustomAbout({
-    Key? key,
+  const AboutMe({
     required this.applicationName,
     required this.version,
     required this.description,
@@ -21,10 +22,11 @@ class AboutMe extends StatelessWidget {
     this.logo,
     this.backgroundColor,
     this.textColor,
-  }) : super(key: key);
+  });
 
-  void showCustomAbout(BuildContext context) {
-    showDialog(
+  /// Shows the dialog. Returns when dismissed.
+  Future<void> showCustomAbout(BuildContext context) {
+    return showDialog<void>(
       context: context,
       builder: (BuildContext context) {
         return Dialog(
@@ -72,11 +74,17 @@ class AboutMe extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ],
-                  const SizedBox(height: 24),
-                  if (additionalContent != null) ...additionalContent!,
-                  TextButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    child: Text('Close'),
+                  if (additionalContent != null) ...[
+                    const SizedBox(height: 12),
+                    ...additionalContent!,
+                  ],
+                  const SizedBox(height: 16),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () => Navigator.of(context).pop(),
+                      child: const Text('Close'),
+                    ),
                   ),
                 ],
               ),
