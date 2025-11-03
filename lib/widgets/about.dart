@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 /// It's used like: `const AboutMe(...).showCustomAbout(context);`
 class AboutMe {
   final String applicationName;
+  final String developerName = "Fouad El Azbi";
+  final String companyName = "EAF microservice";
+  final String companyDomain = "https://eaf-microservice.netlify.app/";
   final String version;
   final String? legalese;
   final String description;
@@ -43,6 +46,24 @@ class AboutMe {
                   ],
                   Text(
                     applicationName,
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: textColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    developerName,
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: textColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    "Company: $companyName\nSite: $companyDomain",
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       color: textColor,
                       fontWeight: FontWeight.bold,
