@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const CircleAvatar(
+                        CircleAvatar(
                           radius: 40,
                           backgroundColor: Color(0xFF25D366),
                           child: Icon(

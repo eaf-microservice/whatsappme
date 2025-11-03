@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class About extends StatelessWidget {
+class AboutMe extends StatelessWidget {
   final String applicationName;
   final String version;
   final String? legalese;
