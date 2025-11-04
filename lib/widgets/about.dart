@@ -56,6 +56,7 @@ class AboutMe {
                   Text(
                     developerName,
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      fontSize: 18.0,
                       color: textColor,
                       fontWeight: FontWeight.bold,
                     ),
@@ -65,6 +66,7 @@ class AboutMe {
                   Text(
                     "Company: $companyName\nSite: $companyDomain",
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      fontSize: 14.0,
                       color: textColor,
                       fontWeight: FontWeight.bold,
                     ),
