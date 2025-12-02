@@ -1,4 +1,5 @@
 # WhatsAppMe
+![WhatsappMe icon](./assets/app.png)
 
 Send a WhatsApp message to any number without saving it as a contact. This repository contains a Flutter application targeting Android and iOS.
 
@@ -138,4 +139,11 @@ flutter analyze
 
 
 ## License
-This project is provided as-is. If you need a specific open-source license, add a LICENSE file (e.g., MIT) and update this section accordingly.
+This project is licensed under the Non-Commercial Use License (NCL-1.0).
+
+- Copyright (c) 2025 EAF microservice
+- Developer: Fouad El Azbi
+- Non-commercial use, modification, and distribution are permitted under the terms described in the LICENSE file.
+- Any business/commercial use requires prior written authorization from the copyright holder.
+
+See the full terms in the LICENSE file at the repository root.
