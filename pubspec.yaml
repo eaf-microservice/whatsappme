@@ -1,14 +1,13 @@
-name: whatsappme
+name: wadirectmessage
 description: "Send message to whatsapp number without save it on contact"
 publish_to: 'none'
-version: 1.0.4+12
+version: 1.0.4+13
 environment:
   sdk: ^3.9.2
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
   url_launcher: ^6.3.2
   intl_phone_field: ^3.2.0
   dtd: ^4.0.0
@@ -18,11 +17,12 @@ dependencies:
   path: ^1.9.1
   stack_trace: ^1.12.1
   web: ^1.1.1
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.14.1
+  cupertino_icons: ^1.0.8
 
 flutter:
   uses-material-design: true

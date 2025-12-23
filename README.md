@@ -1,18 +1,17 @@
-# WhatsAppMe
-![WhatsappMe icon](./assets/app.png)
+# WaDirectMessage - Direct Chat
+![wadirectmessage icon](./assets/app.png)
 
-Send a WhatsApp message to any number without saving it as a contact. This repository contains a Flutter application targeting Android and iOS.
-
+WaDirectMessage is your go-to tool for sending messages to any number not saved in your phonebook. Whether it's for business or a quick one-time chat, WaDirectMessage streamlines the process.
 
 ## Features
-- Open a WhatsApp chat with a phone number directly
 - Optional prefilled message text
-- Simple, fast UI focused on a single task
-- Works with international phone numbers
-
+- Simple and clean UI (built for speed).
+- Direct chat without saving numbers.
+- Supports all international country codes.
+- No data collection - Your privacy is our priority.
 
 ## Screenshots
-- Home screen: see `Screenshot/home.jpg`
+- Home screen: see `Screenshot/homeScreen.jpg`
 
 
 ## Tech Stack
@@ -56,7 +55,7 @@ flutter doctor -v
 1. Clone the repository:
    ```
    git clone <repo-url>
-   cd whatsappme
+   cd wadirectmessage
    ```
 2. Fetch dependencies:
    ```
