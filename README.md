@@ -3,6 +3,20 @@
 
 WaDirectMessage is your go-to tool for sending messages to any number not saved in your phonebook. Whether it's for business or a quick one-time chat, WaDirectMessage streamlines the process.
 
+## Short Desciprtion
+Send direct messages without saving contacts. Fast, secure, and easy
+
+## Full Description
+WaDirectMessage is a powerful utility tool designed to enhance your messaging experience by allowing you to start a direct chat with any phone number without saving it to your mobile contacts.
+
+
+# Why choose WaDirectMessage?
+
+- Instant Chat: Start a conversation immediately without cluttering your phonebook.
+- Simple & Clean UI: A user-friendly interface designed for speed and efficiency.
+- Global Support: Easily select country codes and message international numbers.
+- Privacy First: We do not store your data or access your personal contact list.
+
 ## Features
 - Optional prefilled message text
 - Simple and clean UI (built for speed).
@@ -102,12 +116,15 @@ flutter doctor -v
 
 
 ## How It Works
-The app constructs WhatsApp deep links to initiate a chat without saving contacts. Typical formats:
-- `https://wa.me/<phone>?text=<urlencoded-message>`
-- `whatsapp://send?phone=<phone>&text=<urlencoded-message>`
+- Open WaDirectMessage.
+- Select the country and enter the phone number.
+- Click "Start Chat" to open the official messaging application window.
 
-On Android/iOS, launching these URIs opens WhatsApp if installed; else the app can fall back to the web URL.
+## Important Note:
 
+- WaDirectMessage is an independent application and is NOT affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.
+- This app uses official public APIs to provide a seamless user experience.
+- The name "WhatsApp" and its related logos are trademarks of WhatsApp Inc.
 
 ## Testing
 Run unit/widget tests:
